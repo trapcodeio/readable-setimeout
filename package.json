@@ -1,0 +1,26 @@
+{
+  "name": "readable-timeout",
+  "version": "0.1.0",
+  "description": "Readable setTimeout functions for humans. :)",
+  "main": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "yarn test && yarn build",
+    "test": "ts-node tests"
+  },
+  "repository": "https://github.com/trapcodeio/readable-timeout",
+  "author": "trapcodeio",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "eslint": "^7.16.0",
+    "japa": "^3.1.1",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "chrono-node": "^2.1.10"
+  }
+}
