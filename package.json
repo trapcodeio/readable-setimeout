@@ -2,7 +2,8 @@
   "name": "readable-timeout",
   "version": "0.1.0",
   "description": "Readable setTimeout functions for humans. :)",
-  "main": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "prepare": "yarn test && yarn build",
