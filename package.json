@@ -9,7 +9,7 @@
     "prepare": "yarn test && yarn build",
     "test": "ts-node tests"
   },
-  "repository": "https://github.com/trapcodeio/readable-timeout",
+  "repository": "https://github.com/trapcodeio/readable-setimeout",
   "author": "trapcodeio",
   "license": "MIT",
   "devDependencies": {
