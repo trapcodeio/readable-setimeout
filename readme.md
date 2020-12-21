@@ -2,8 +2,6 @@
 
 Create setTimeouts using readable timeout strings.
 
-### Example
-
 Imagine we could declare timeouts like this
 
 ```javascript
@@ -34,15 +32,13 @@ Timeout.define(() => false, "next 30 seconds");
 // is equivalent to
 Timeout.run(() => false, "next 30 seconds"); // allias of define
 // is equivalent to
-setTimeout(() => false, 30000) //
+setTimeout(() => false, 30000) // 3000±1
 // is equivalent to
 Timeout.run(() => false, 30000) 
-// milliseconds can also be used but defeats the purpose of this pacakge
+// milliseconds can also be used but defeats the purpose of this package
 ```
 
-Notes:
-
-- All setTimeouts returns the timeout as the default `setTimeout` would.
+**Note:** All setTimeouts returns the timeout as the default `setTimeout` would.
 
 ### .in
 
@@ -83,14 +79,14 @@ Timeout.ms("5 seconds from now");
 
 ## Performance
 
-If you are **extremely** Performance conscious then you should use the `default` because it would take a **very tiny
+If you are **extremely** Performance conscious then you should use the default `setTimeout` because it would take a **very tiny
 millisecond** to understand your string and convert to milliseconds.
 
 
 ## Accuracy
 
 Returned milliseconds is not exactly the number you are expecting, most times maybe ±1000ms. You can Run tests to see
-what we mean. E.g
+what we mean. E.g.
 
 ```javascript
 const Timeout = require('readable-timeout');
@@ -101,5 +97,5 @@ Timeout.msIn("10 seconds");
 // Between [9000-11000]
 ```
 
-But this only means alot when you want the exact `second`
+This only means a lot when you want the exact `seconds`
 
